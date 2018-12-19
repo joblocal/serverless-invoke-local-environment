@@ -24,7 +24,7 @@ After installation you can configure the plugin like so:
 # serverless.yml
 
 plugins:
-  - serverless-invoke-local-environment
+  - '@joblocal/serverless-invoke-local-environment'
 
 custom:
   invokeLocalEnvironment: ${file(.env)}
