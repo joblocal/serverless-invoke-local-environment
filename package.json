@@ -1,0 +1,42 @@
+{
+  "name": "@joblocal/serverless-invoke-local-environment",
+  "version": "1.0.0",
+  "description": "Overwrite serverless environment to enable local development.",
+  "main": "src/index.js",
+  "author": "Joblocal GmbH",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "jest",
+    "validate": "npm-run-all --parallel lint test"
+  },
+  "peerDependencies": {
+    "serverless": "^1.32.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.10.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "git-hooks": "^1.1.10",
+    "jest": "^23.6.0",
+    "npm-run-all": "^4.1.5"
+  },
+  "dependencies": {
+    "dotenv": "^6.2.0"
+  },
+  "keywords": [
+    "serverless",
+    "environment",
+    "aws",
+    "invoke",
+    "local"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joblocal/serverless-invoke-local-environment.git"
+  },
+  "bugs": {
+    "url": "https://github.com/joblocal/serverless-invoke-local-environment/issues"
+  },
+  "homepage": "https://github.com/joblocal/serverless-invoke-local-environment#readme"
+}

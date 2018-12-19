@@ -1,0 +1,11 @@
+# package directories
+node_modules
+
+# configuration
+.env
+.env.local
+
+yarn-error.log
+
+# jest
+coverage
