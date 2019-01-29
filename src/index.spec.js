@@ -65,6 +65,11 @@ describe('no configuration provided', () => {
     plugin = new ServerlessPluginInvokeLocalEnvironment(serverlessMock, optionsMock);
   });
 
+  test('it binds to before invoke local', () => {
+    expect(plugin.hooks).toHaveProperty('before:invoke:local:invoke');
+    expect(plugin.hooks['before:invoke:local:invoke']).toBeInstanceOf(Function);
+  });
+
   test('to return empty configuration', () => {
     expect(plugin.getConfig()).toEqual('');
   });
