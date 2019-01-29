@@ -8,6 +8,7 @@
   "scripts": {
     "lint": "eslint .",
     "test": "jest",
+    "test:coverage": "jest --coverage",
     "validate": "npm-run-all --parallel lint test"
   },
   "peerDependencies": {
