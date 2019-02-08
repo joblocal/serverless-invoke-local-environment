@@ -8,6 +8,7 @@
   "scripts": {
     "lint": "eslint .",
     "test": "jest",
+    "test:coverage": "jest --coverage",
     "validate": "npm-run-all --parallel lint test"
   },
   "peerDependencies": {
@@ -18,7 +19,7 @@
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.14.0",
     "git-hooks": "^1.1.10",
-    "jest": "^23.6.0",
+    "jest": "^24",
     "npm-run-all": "^4.1.5"
   },
   "dependencies": {
