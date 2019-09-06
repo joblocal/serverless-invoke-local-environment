@@ -1,6 +1,6 @@
 {
   "name": "@joblocal/serverless-invoke-local-environment",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Overwrite serverless environment to enable local development.",
   "main": "src/index.js",
   "author": "Joblocal GmbH",
