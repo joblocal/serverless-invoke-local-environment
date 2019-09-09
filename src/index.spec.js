@@ -49,9 +49,7 @@ describe('no configuration provided', () => {
   const serverlessMock = {
     service: {
       custom: {},
-      getFunction: jest.fn(() => ({
-        environment: {},
-      })),
+      getFunction: jest.fn(() => ({})),
     },
     cli: {
       log: jest.fn(),

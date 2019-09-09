@@ -11,11 +11,13 @@ class ServerlessPluginInvokeLocalEnvironment {
   }
 
   overwriteEnvironment() {
-    const environment = dotenv.parse(this.getConfig());
-    const fn = this.serverless.service.getFunction(this.options.function);
+    const env = dotenv.parse(this.getConfig());
+    const { environment = {} } = this.serverless.service.getFunction(this.options.function);
 
-    Object.assign(fn.environment, environment);
-    Object.assign(process.env, environment);
+    // assign dotenv to function env
+    Object.assign(environment, env);
+    // assign dotenv to process.env
+    Object.assign(process.env, env);
 
     this.serverless.cli.log(`Invoking locally with environment: ${JSON.stringify(environment)}`);
   }
